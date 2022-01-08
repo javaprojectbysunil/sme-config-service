@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: SME-CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sunilkolawale/sme-config-repo.git
+          default-label: main
+
+server:
+  port: ${port:8888}
